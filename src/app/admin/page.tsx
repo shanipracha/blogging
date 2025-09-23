@@ -1,11 +1,6 @@
 import { createClient } from '@/lib/supabase-server'
 import { BookOpen, Calendar, MessageCircle, Eye, Heart, Users } from 'lucide-react'
 
-interface Category {
-  name: string
-  color: string
-}
-
 interface BlogPost {
   id: string
   title: string
@@ -14,7 +9,10 @@ interface BlogPost {
   created_at: string
   views: number
   likes: number
-  categories: Category[] | null
+  categories: {
+    name: string
+    color: string
+  }[] | null
 }
 
 async function getStats() {
@@ -68,7 +66,7 @@ async function getRecentBlogs(): Promise<BlogPost[]> {
     console.error('Error fetching recent blogs:', error)
     return []
   }
-  return (data as BlogPost[]) || []
+  return data || []
 }
 
 async function getRecentEvents() {
