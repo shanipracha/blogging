@@ -1,6 +1,22 @@
 import { createClient } from '@/lib/supabase-server'
 import { BookOpen, Calendar, MessageCircle, Eye, Heart, Users } from 'lucide-react'
 
+interface Category {
+  name: string
+  color: string
+}
+
+interface BlogPost {
+  id: string
+  title: string
+  slug: string
+  published: boolean
+  created_at: string
+  views: number
+  likes: number
+  categories: Category | null
+}
+
 async function getStats() {
   const supabase = createClient()
   
@@ -27,7 +43,7 @@ async function getStats() {
   }
 }
 
-async function getRecentBlogs() {
+async function getRecentBlogs(): Promise<BlogPost[]> {
   const supabase = createClient()
   
   const { data, error } = await supabase
@@ -52,7 +68,7 @@ async function getRecentBlogs() {
     console.error('Error fetching recent blogs:', error)
     return []
   }
-  return data || []
+  return (data as BlogPost[]) || []
 }
 
 async function getRecentEvents() {
@@ -173,11 +189,11 @@ export default async function AdminDashboard() {
                         <span 
                           className="px-2 py-1 text-xs rounded-full"
                           style={{ 
-                            backgroundColor: (blog.categories as any)?.color + '20',
-                            color: (blog.categories as any)?.color 
+                            backgroundColor: blog.categories?.color + '20',
+                            color: blog.categories?.color 
                           }}
                         >
-                          {(blog.categories as any)?.name}
+                          {blog.categories?.name}
                         </span>
                       </div>
                     </div>
