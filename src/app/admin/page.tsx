@@ -14,7 +14,7 @@ interface BlogPost {
   created_at: string
   views: number
   likes: number
-  categories: Category | null
+  categories: Category[] | null
 }
 
 async function getStats() {
@@ -189,11 +189,11 @@ export default async function AdminDashboard() {
                         <span 
                           className="px-2 py-1 text-xs rounded-full"
                           style={{ 
-                            backgroundColor: blog.categories?.color + '20',
-                            color: blog.categories?.color 
+                            backgroundColor: blog.categories?.[0]?.color + '20',
+                            color: blog.categories?.[0]?.color 
                           }}
                         >
-                          {blog.categories?.name}
+                          {blog.categories?.[0]?.name}
                         </span>
                       </div>
                     </div>
