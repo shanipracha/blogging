@@ -59,7 +59,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
                     <p className="text-gray-400">hello@bloghub.com</p>
-                    <p className="text-gray-500 text-sm">We'll respond within 24 hours</p>
+                    <p className="text-gray-500 text-sm">We&apos;ll respond within 24 hours</p>
                   </div>
                 </div>
 
