@@ -226,3 +226,5 @@ If you encounter any issues:
 ---
 
 **Built with ❤️ using Next.js and Supabase**
+
+<!-- Updated for deployment -->
