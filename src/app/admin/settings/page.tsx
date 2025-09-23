@@ -1,4 +1,4 @@
-import { Settings, Save, User, Mail, Globe, Database } from 'lucide-react'
+import { Save, User, Mail, Globe, Database } from 'lucide-react'
 
 export default function AdminSettingsPage() {
   return (

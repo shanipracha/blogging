@@ -31,8 +31,8 @@ export default function AdminLoginPage() {
       if (data.user) {
         router.push('/admin')
       }
-    } catch (error: any) {
-      setError(error.message)
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'An error occurred')
     } finally {
       setLoading(false)
     }
@@ -122,9 +122,9 @@ export default function AdminLoginPage() {
           </div>
 
           <div className="text-center">
-            <a href="/" className="text-primary-400 hover:text-primary-300 text-sm">
+            <Link href="/" className="text-primary-400 hover:text-primary-300 text-sm">
               ← Back to Homepage
-            </a>
+            </Link>
           </div>
         </form>
       </div>

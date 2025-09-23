@@ -84,7 +84,7 @@ export default async function AdminDashboard() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold mb-2">Admin Dashboard</h1>
-          <p className="text-gray-400">Welcome back! Here's what's happening with your site.</p>
+            <p className="text-gray-400">Welcome back! Here&apos;s what&apos;s happening with your site.</p>
         </div>
 
         {/* Stats Grid */}

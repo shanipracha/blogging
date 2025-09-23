@@ -41,8 +41,8 @@ export default function ContactPage() {
             Get in <span className="text-gradient">Touch</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Have a question, suggestion, or just want to say hello? We'd love to hear from you. 
-            Reach out to us and we'll get back to you as soon as possible.
+            Have a question, suggestion, or just want to say hello? We&apos;d love to hear from you. 
+            Reach out to us and we&apos;ll get back to you as soon as possible.
           </p>
         </div>
 
@@ -117,9 +117,9 @@ export default function ContactPage() {
                     <MessageCircle className="text-green-400" size={32} />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Message Sent!</h3>
-                  <p className="text-gray-400 mb-6">
-                    Thank you for reaching out. We'll get back to you within 24 hours.
-                  </p>
+                    <p className="text-gray-400 mb-6">
+                      Thank you for reaching out. We&apos;ll get back to you within 24 hours.
+                    </p>
                   <button
                     onClick={() => setIsSubmitted(false)}
                     className="btn-primary"
@@ -200,7 +200,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-medium mb-2">How can I submit a blog post?</h4>
                   <p className="text-gray-400 text-sm">
-                    Contact us through this form or email us directly. We'll review your submission 
+                    Contact us through this form or email us directly. We&apos;ll review your submission 
                     and get back to you within 48 hours.
                   </p>
                 </div>
@@ -208,14 +208,14 @@ export default function ContactPage() {
                   <h4 className="font-medium mb-2">Can I host an event on BlogHub?</h4>
                   <p className="text-gray-400 text-sm">
                     Absolutely! We love supporting community events. Reach out to us with your 
-                    event details and we'll help you get it listed.
+                    event details and we&apos;ll help you get it listed.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-medium mb-2">How do I become a regular contributor?</h4>
                   <p className="text-gray-400 text-sm">
                     Start by submitting a few guest posts. If we love your content and style, 
-                    we'll reach out about becoming a regular contributor.
+                    we&apos;ll reach out about becoming a regular contributor.
                   </p>
                 </div>
               </div>

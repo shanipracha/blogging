@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Eye, Heart, Calendar } from 'lucide-react'
@@ -18,9 +18,9 @@ export default function BlogList({ search, category }: BlogListProps) {
 
   useEffect(() => {
     fetchBlogs()
-  }, [search, category])
+  }, [fetchBlogs])
 
-  async function fetchBlogs() {
+  const fetchBlogs = useCallback(async () => {
     try {
       setLoading(true)
       setError(null)
@@ -58,7 +58,7 @@ export default function BlogList({ search, category }: BlogListProps) {
     } finally {
       setLoading(false)
     }
-  }
+  }, [search, category])
 
   if (loading) {
     return <BlogListSkeleton />

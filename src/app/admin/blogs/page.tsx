@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Plus, Edit, Trash2, Eye, EyeOff } from 'lucide-react'
+import { Plus, Edit, Trash2, Eye } from 'lucide-react'
 import { createClient } from '@/lib/supabase-server'
 
 async function getBlogPosts() {

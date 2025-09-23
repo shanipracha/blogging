@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Calendar, Eye, Heart, MessageCircle, ArrowLeft, Share2 } from 'lucide-react'
+import { Calendar, Eye, ArrowLeft, Share2 } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import CommentsSection from '@/components/CommentsSection'
 import LikeButton from '@/components/LikeButton'

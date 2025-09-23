@@ -1,4 +1,3 @@
-import { Suspense } from 'react'
 import { Calendar, MapPin, Users, Clock } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import Image from 'next/image'

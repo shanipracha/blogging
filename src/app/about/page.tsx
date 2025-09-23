@@ -10,7 +10,7 @@ export default function AboutPage() {
             About <span className="text-gradient">BlogHub</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            We're passionate about creating a vibrant community where ideas flourish, 
+            We&apos;re passionate about creating a vibrant community where ideas flourish, 
             knowledge is shared, and connections are made through meaningful content and events.
           </p>
         </div>
@@ -25,12 +25,12 @@ export default function AboutPage() {
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
               At BlogHub, we believe in the power of storytelling and community. Our mission is to 
               provide a platform where writers, thinkers, and creators can share their insights, 
-              experiences, and expertise with a global audience. We're committed to fostering 
+              experiences, and expertise with a global audience. We&apos;re committed to fostering 
               meaningful conversations and building bridges between people through quality content 
               and engaging events.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Whether you're here to learn, share, or connect, BlogHub is your gateway to a world 
+              Whether you&apos;re here to learn, share, or connect, BlogHub is your gateway to a world 
               of knowledge and inspiration. We curate the best content and organize events that 
               matter, creating opportunities for growth, learning, and meaningful connections.
             </p>
@@ -47,7 +47,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Passion</h3>
               <p className="text-gray-400">
-                We're driven by our love for quality content and meaningful connections. 
+                We&apos;re driven by our love for quality content and meaningful connections. 
                 Every piece of content and every event is crafted with care and attention to detail.
               </p>
             </div>
@@ -88,13 +88,13 @@ export default function AboutPage() {
               </p>
               <p>
                 What began as a passion project has grown into a thriving platform that connects 
-                thousands of readers, writers, and event-goers worldwide. We've hosted hundreds 
+                thousands of readers, writers, and event-goers worldwide. We&apos;ve hosted hundreds 
                 of events, published thousands of articles, and built a community that continues 
                 to inspire and educate.
               </p>
               <p>
                 Today, BlogHub stands as a testament to the power of community-driven content. 
-                We're proud to be a platform where voices are heard, ideas are celebrated, and 
+                We&apos;re proud to be a platform where voices are heard, ideas are celebrated, and 
                 connections are made that last a lifetime.
               </p>
             </div>
@@ -152,12 +152,12 @@ export default function AboutPage() {
               readers, and event-goers who are shaping the future of content and connection.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/blog" className="btn-primary text-lg px-8 py-3">
+              <Link href="/blog" className="btn-primary text-lg px-8 py-3">
                 Start Reading
-              </a>
-              <a href="/events" className="btn-secondary text-lg px-8 py-3">
+              </Link>
+              <Link href="/events" className="btn-secondary text-lg px-8 py-3">
                 Join Events
-              </a>
+              </Link>
             </div>
           </div>
         </section>
