@@ -173,11 +173,11 @@ export default async function AdminDashboard() {
                         <span 
                           className="px-2 py-1 text-xs rounded-full"
                           style={{ 
-                            backgroundColor: blog.categories?.color + '20',
-                            color: blog.categories?.color 
+                            backgroundColor: (blog.categories as any)?.color + '20',
+                            color: (blog.categories as any)?.color 
                           }}
                         >
-                          {blog.categories?.name}
+                          {(blog.categories as any)?.name}
                         </span>
                       </div>
                     </div>
