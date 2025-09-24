@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(request: NextRequest) {
   const forwarded = request.headers.get('x-forwarded-for')
-  const ip = forwarded ? forwarded.split(',')[0] : request.ip || 'anonymous'
+  const ip = forwarded ? forwarded.split(',')[0] : 'anonymous'
   
   return new NextResponse(ip, {
     status: 200,
@@ -11,3 +11,4 @@ export async function GET(request: NextRequest) {
     },
   })
 }
+
