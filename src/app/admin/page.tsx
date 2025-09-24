@@ -9,7 +9,7 @@ interface BlogPost {
   created_at: string
   views: number
   likes: number
-  tags: string[]
+  tags?: string[]
   categories: {
     name: string
     color: string
@@ -68,7 +68,7 @@ async function getRecentBlogs(): Promise<BlogPost[]> {
     console.error('Error fetching recent blogs:', error)
     return []
   }
-  return data || []
+  return data.map((post: any) => ({ ...post, tags: post.tags || [] })) || []
 }
 
 async function getRecentEvents() {
