@@ -183,3 +183,4 @@ INSERT INTO events (name, description, event_date, event_time, location, max_att
   'Convention Center, San Francisco',
   200
 );
+

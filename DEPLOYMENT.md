@@ -219,3 +219,4 @@ Your BlogHub application is now live! 🚀
 ---
 
 **Need help?** Check the [README.md](./README.md) for more detailed information about the project structure and features.
+

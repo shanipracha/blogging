@@ -78,3 +78,4 @@ export default function CategoryFilter({ categories, selectedCategory }: Categor
     </div>
   )
 }
+

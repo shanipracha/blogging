@@ -83,3 +83,4 @@ export default function LikeButton({ blogPostId, initialLikes }: LikeButtonProps
     </button>
   )
 }
+
