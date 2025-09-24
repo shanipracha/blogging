@@ -55,6 +55,7 @@ async function getRecentBlogs(): Promise<BlogPost[]> {
       created_at,
       views,
       likes,
+      tags,
       categories (
         name,
         color
