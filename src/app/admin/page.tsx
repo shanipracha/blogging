@@ -9,6 +9,7 @@ interface BlogPost {
   created_at: string
   views: number
   likes: number
+  tags: string[]
   categories: {
     name: string
     color: string

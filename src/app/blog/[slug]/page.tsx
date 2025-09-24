@@ -153,7 +153,7 @@ export default async function BlogDetailPage({
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4">Tags</h3>
             <div className="flex flex-wrap gap-2">
-              {blogPost.tags.map((tag, index) => (
+              {blogPost.tags.map((tag: string, index: number) => (
                 <span
                   key={index}
                   className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm hover:bg-gray-700 transition-colors"
