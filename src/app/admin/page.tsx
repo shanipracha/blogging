@@ -68,7 +68,7 @@ async function getRecentBlogs(): Promise<BlogPost[]> {
     console.error('Error fetching recent blogs:', error)
     return []
   }
-  return data.map((post: any) => ({ ...post, tags: post.tags || [] })) || []
+  return (data || []).map((post: any) => ({ ...post, tags: post.tags || [] }))
 }
 
 async function getRecentEvents() {
